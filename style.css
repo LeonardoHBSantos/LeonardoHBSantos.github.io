@@ -50,7 +50,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+  background-color: rgb(202, 240, 248);
   width: 100%;
   height: 95vh;
   position: relative;
@@ -149,6 +149,7 @@ header {
   border-radius: 2vh;
   margin: 1.5vh;
   color: rgb(0, 150, 199);
+  border: 0.3vh solid rgb(2, 62, 138);
 }
 
 #projects {
@@ -157,7 +158,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   height: 100vh;
-  background-color: rgb(202, 240, 248);
   flex-direction: column;
 }
 
@@ -193,16 +193,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
   width: 50vh;
   height: 25vh;
   border-radius: 5vh;
-  background-color: white;
+  background-color: rgb(202, 240, 248);
   margin: 3vh;
   font-family: Tumbly, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 5vh;
   font-weight: bold;
   color: rgb(0, 150, 199);
+  border: 0.3vh solid rgb(2, 62, 138);
 }
 
 #contact {
@@ -210,8 +210,8 @@ header {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 90vh;
-  background-image: url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+  height: 100vh;
+  background: linear-gradient(to bottom,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
   flex-direction: column;
 }
 
@@ -236,35 +236,50 @@ header {
   background-color: white;
   margin-top: 3vh;
   border-radius: 5vh;
-  height: 60vh;
+  height: 65vh;
+  margin-bottom: 5vh;
 }
 
 #form-contact span {
-  font-family: CaviarDreams, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: SpartanMB, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.5vh;
   font-weight: bolder;
   color: rgb(2, 62, 138);
   margin: 1.5vh auto;
-  width: 80%;
+  width: 90%;
 }
 
 #form-contact span:first-child {
   margin-top: 5vh;
 }
 
+#form-contact button {
+  background-color: rgb(173, 232, 244);
+  width: 12vh;
+  height: 7vh;
+  border-radius: 3vh;
+  align-self: center;
+  margin-bottom: 3vh;
+  color: rgb(2, 62, 138);
+  border: 0.3vh solid rgb(2, 62, 138);
+  font-size: 2vh;
+  font-family: SpartanMB, Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
 #name, #e-mail {
-  width: 80%;
+  width: 90%;
   margin: 1.5vh auto;
   border-radius: 1vh;
   padding: 2vh;
   font-family: CaviarDreams, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
   background-color: rgb(173, 232, 244);
-  border: none;
+  border: 0.3vh solid rgb(2, 62, 138);
 }
 
 #message {
-  width: 80%;
+  width: 90%;
   height: 20vh;
   margin: 1.5vh auto;
   border-radius: 1.5vh;
@@ -272,6 +287,36 @@ header {
   font-family: CaviarDreams, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
   background-color: rgb(173, 232, 244);
-  border: none;
+  border: 0.3vh solid rgb(2, 62, 138);
   resize: none;
+  margin-bottom: 3vh;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  background-color: rgb(0, 180, 216);
+  flex-direction: column;
+  color: white;
+}
+
+#social i {
+  color: white;
+  font-size: 5vh;
+  margin: 1vh;
+}
+
+#copyright {
+  border-top: 0.1vh solid white;
+  width: 30%;
+}
+
+#copyright p {
+  text-align: center;
+  font-family: SpartanMB, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
+  font-weight: bolder;
+  margin: 1.5vh auto;
 }
